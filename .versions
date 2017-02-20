@@ -9,4 +9,4 @@ modules-runtime@0.7.9
 promise@0.8.8
 random@1.0.10
 underscore@1.0.10
-zodiase:build-json@0.0.1
+zodiase:build-json@1.0.0

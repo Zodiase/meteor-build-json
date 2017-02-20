@@ -1,6 +1,6 @@
 Package.describe({
   name: 'zodiase:build-json',
-  version: '0.0.1',
+  version: '1.0.0',
   // Brief, one-line summary of the package.
   summary: 'Build json files into js files so packages can add them.',
   // URL to the Git repository containing the source code for this package.
