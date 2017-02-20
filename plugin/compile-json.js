@@ -41,7 +41,7 @@ class JsonCompiler extends CachingCompiler {
       return null;
     }
 
-    const JavaScript = `exports = ${jsonStr};`;
+    const JavaScript = `module.exports = ${jsonStr};`;
 
     const compileResult = {js: JavaScript, sourceMap: ''};
 
