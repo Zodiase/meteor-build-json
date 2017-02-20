@@ -36,7 +36,7 @@ According to [the official documentation](https://docs.meteor.com/packages/modul
 
 > can import other files from the package source directory, even if those files have not been added using the `api.addFiles` function.
 
-But that's now true if `client.js` looks like:
+But that's not true if `client.js` looks like:
 
 ```JavaScript
 // client.js
