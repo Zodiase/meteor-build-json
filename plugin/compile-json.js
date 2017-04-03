@@ -1,6 +1,4 @@
 Plugin.registerCompiler({
-  // *.lessimport has been deprecated since 0.7.1, but it still works. We
-  // *recommend *.import.less or the imports subdirectory instead.
   extensions: ['json'],
   archMatching: 'web'
 }, () => new JsonCompiler());
