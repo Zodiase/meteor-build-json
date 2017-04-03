@@ -4,11 +4,13 @@ This package builds JSON files into JavaScript files so packages can `addFiles` 
 
 ## Usage
 
+**Requires Meteor release 1.3+.**
+
 ```JavaScript
 // package.js
 Package.onUse(function(api) {
   api.use("modules");
-  api.use('zodiase:build-json@1.0.0');
+  api.use('zodiase:build-json@1.1.0');
 
   api.addFiles('config.json', 'client');
   api.mainModule('client.js', 'client');
