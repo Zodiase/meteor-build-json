@@ -26,7 +26,14 @@ Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('practicalmeteor:mocha');
   api.use('practicalmeteor:chai');
+
   api.use('zodiase:build-json');
+
+  // This line should fail without this package.
+  api.addFiles('tests/test-data.json', ['client', 'server']);
+
+  // This file should fail the build.
+  //api.addFiles('tests/test-bad-data.json', ['client', 'server']);
 
   api.mainModule('tests/index.js', ['client', 'server']);
 });

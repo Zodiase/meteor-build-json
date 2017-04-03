@@ -13,8 +13,7 @@
 //  limitations under the License.
 
 Plugin.registerCompiler({
-  extensions: ['json'],
-  archMatching: 'web'
+  extensions: ['json']
 }, () => new JsonCompiler());
 
 // CompileResult is {js, sourceMap}.
@@ -46,7 +45,10 @@ class JsonCompiler extends CachingCompiler {
     } catch (error) {
       inputFile.error({
         message: error.message,
-        sourcePath: decodeFilePath(error.filename),
+        // `error.filename` will be undefined when it's a JSON parsing error.
+        // Since this package only handles JSON files in packages, `inputFile.getPathInPackage()` should be enough.
+        //Don't use this: sourcePath: decodeFilePath(error.filename),
+        sourcePath: inputFile.getPathInPackage(),
         line: error.line,
         column: error.column
       });

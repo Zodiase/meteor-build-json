@@ -28,7 +28,7 @@ describe('zodiase:build-json', () => {
 
   it('should support importing json files.', () => {
 
-    import data from "./test-data.json";
+    import data from "./test-data.json.js";
 
     expect(data).to.not.be.undefined;
     expect(data).to.be.an('object');
