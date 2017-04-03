@@ -1,0 +1,22 @@
+{
+  "name": "meteor-build-json",
+  "version": "1.0.0",
+  "description": "JSON loader for Meteor.",
+  "main": "package.js",
+  "scripts": {
+    "test": "spacejam test-packages --driver-package=practicalmeteor:mocha-console-runner ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zodiase/meteor-build-json.git"
+  },
+  "author": "Xingchen Hong",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Zodiase/meteor-build-json/issues"
+  },
+  "homepage": "https://github.com/Zodiase/meteor-build-json#readme",
+  "devDependencies": {
+    "spacejam": "^1.6.1"
+  }
+}

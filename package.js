@@ -21,3 +21,12 @@ Package.registerBuildPlugin({
 Package.onUse(function(api) {
   api.use('isobuild:compiler-plugin@1.0.0');
 });
+
+Package.onTest(function(api) {
+  api.use('ecmascript');
+  api.use('practicalmeteor:mocha');
+  api.use('practicalmeteor:chai');
+  api.use('zodiase:build-json');
+
+  api.mainModule('tests/index.js', ['client', 'server']);
+});

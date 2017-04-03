@@ -1,0 +1,13 @@
+{
+  "number": 123.456,
+  "boolean": true,
+  "string": "abcd-efgh",
+  "object": {
+    "secret": "foobar"
+  },
+  "array": [
+    1,
+    2,
+    3
+  ]
+}
