@@ -12,7 +12,7 @@ Package.describe({
 
 Package.registerBuildPlugin({
   name: "compileJsonBatch",
-  use: ['caching-compiler@1.1.9', 'ecmascript@0.6.3'],
+  use: ['caching-compiler@1.0.0', 'ecmascript@0.4.0'],
   sources: [
     'plugin/compile-json.js'
   ]
