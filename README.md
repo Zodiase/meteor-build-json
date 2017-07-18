@@ -1,5 +1,7 @@
 # Meteor JSON Builder.
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Zodiase/meteor-build-json.svg)](https://greenkeeper.io/)
+
 This package builds JSON files into JavaScript files so packages can `addFiles` them.
 
 ## Usage
